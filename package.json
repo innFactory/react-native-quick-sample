@@ -7,7 +7,6 @@
     "test": "jest"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
     "pigment": "^0.1.0",
     "react": "16.0.0-alpha.12",
     "react-logger": "^1.1.0",

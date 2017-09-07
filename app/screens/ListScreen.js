@@ -1,22 +1,12 @@
-import React, {Component} from 'react';
-import {
-    View,
-    StyleSheet,
-    Dimensions,
-    Text,
-    ImageStore,
-    Button,
-    ScrollView,
-    FlatList,
-    TouchableOpacity
-} from 'react-native';
+import React, {Component} from "react";
+import {FlatList, StyleSheet, Text, TouchableOpacity, View} from "react-native";
 
 
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
-import {ActionCreators} from '../actions/index';
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
+import {ActionCreators} from "../actions/index";
 
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 class ListScreen extends Component {
 
@@ -27,10 +17,10 @@ class ListScreen extends Component {
 
     constructor(props) {
         super(props);
+    }
 
+    componentDidMount() {
         this.props.navigation.setParams({deleteAllItems: this.props.deleteAllItems});
-        // fix wrong navigation: https://github.com/react-community/react-navigation/issues/1711
-        this.props.navigation.navigate("CounterScreen");
     }
 
     render() {
@@ -58,14 +48,14 @@ class ListScreen extends Component {
 
     static navigationOptions = ({ navigation }) => ({
                 title: "All Colors",
-                    headerRight:
-                        <TouchableOpacity onPress={() => navigation.state.params.deleteAllItems()}>
-                            <Ionicons
-                                name={'ios-trash-outline'}
-                                size={26}
-                                style={{color: "red", marginRight: 10}}
-                            />
-                        </TouchableOpacity>
+                headerRight:
+                    <TouchableOpacity onPress={() =>{navigation.state.params.deleteAllItems()}}>
+                        <Ionicons
+                            name={'ios-trash-outline'}
+                            size={26}
+                            style={{color: "red", marginRight: 10}}
+                        />
+                    </TouchableOpacity>
     })
 }
 

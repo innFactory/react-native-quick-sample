@@ -1,21 +1,11 @@
-import React, {Component} from 'react';
-import {
-    View,
-    StyleSheet,
-    Dimensions,
-    Text,
-    ImageStore,
-    Button,
-    ScrollView,
-    TouchableOpacity
-} from 'react-native';
+import React, {Component} from "react";
+import {StyleSheet, Text, TouchableOpacity, View} from "react-native";
 
 
-import {bindActionCreators} from 'redux';
-import {connect} from 'react-redux';
-import {ActionCreators} from '../actions/index';
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
+import {ActionCreators} from "../actions/index";
 import ColorCircle from "../components/ColorCircle";
-import Ionicons from "react-native-vector-icons/Ionicons";
 
 class CounterScreen extends Component {
 

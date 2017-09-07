@@ -1,33 +1,15 @@
 /**
  * Created by toni on 07.09.2017.
  */
-import React from 'react';
-import {
-    AppRegistry,
-    AsyncStorage,
-    Button,
-    StyleSheet,
-    Text,
-    View,
-} from 'react-native';
-import {
-    Provider,
-} from 'react-redux';
-import {
-    createStore,
-    applyMiddleware,
-    compose,
-    combineReducers
-} from 'redux';
-import {
-    persistStore,
-    autoRehydrate,
-    getStoredState
-} from 'redux-persist';
-import MainTabs from './MainTabs';
-import {listReducer} from './reducers';
-import {createLogger} from 'redux-logger';
-import thunk from 'redux-thunk';
+import React from "react";
+import {AsyncStorage} from "react-native";
+import {Provider} from "react-redux";
+import {applyMiddleware, combineReducers, compose, createStore} from "redux";
+import {autoRehydrate, persistStore} from "redux-persist";
+import MainTabs from "./MainTabs";
+import {listReducer} from "./reducers";
+import {createLogger} from "redux-logger";
+import thunk from "redux-thunk";
 
 
 const logger = createLogger({predicate: (getState, action) => __DEV__});

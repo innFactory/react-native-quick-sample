@@ -16,11 +16,6 @@ import {ActionCreators} from "./actions";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 
-const CounterTab = StackNavigator({
-    CounterScreen: {
-        screen: CounterScreen,
-    },
-});
 
 const ListTab = StackNavigator({
     ListScreen: {
@@ -31,7 +26,7 @@ const ListTab = StackNavigator({
 
 const MainTabs = TabNavigator({
     CounterTab: {
-        screen: CounterTab,
+        screen: CounterScreen,
         navigationOptions: {
             tabBarLabel: "Counter",
             tabBarIcon: ({tintColor, focused}) => (
@@ -60,7 +55,7 @@ const MainTabs = TabNavigator({
 
 }, {
     tabBarPosition: 'bottom',
-    lazyLoad: false,
+    lazy: true,
     animationEnabled: true,
     swipeEnabled: true,
     tabBarOptions: {

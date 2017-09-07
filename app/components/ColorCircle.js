@@ -1,17 +1,7 @@
-import React, {Component} from 'react';
-import {
-    View,
-    StyleSheet,
-    Dimensions,
-    Text,
-    ImageStore,
-    Button,
-    ScrollView,
-    Image,
-    Animated
-} from 'react-native';
+import React, {Component} from "react";
+import {Dimensions, StyleSheet} from "react-native";
 
-import * as Animatable from 'react-native-animatable';
+import * as Animatable from "react-native-animatable";
 
 export default class ColorCircle extends Component {
 
