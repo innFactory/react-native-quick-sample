@@ -1,8 +1,7 @@
 # react-native-quick-sample
 A small and simple example app with navigation, data persistence, listview and animation!
 
-
-<img src="demo.gif" alt="demo" width="60%"/>
+https://user-images.githubusercontent.com/74592979/121864637-c1406a00-cd1a-11eb-9971-c3a413ad9332.mp4
 
 ## Install and run on android
 ```
@@ -19,6 +18,4 @@ cd react-native-quick-sample
 npm install
 react-native run-ios
 ```
-
-[innFactory - iOS & Android Entwicklung](https://innFactory.de)
 
